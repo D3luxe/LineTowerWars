@@ -1,0 +1,60 @@
+//----------------------------------------------------------------------------------
+// Start special abilities for buildings
+//----------------------------------------------------------------------------------
+
+"cannon_tower_splash"
+{
+	"BaseClass"						"ability_datadriven"
+	"AbilityTextureName"			"ogre_magi_bloodlust"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	"MaxLevel"						"1"
+	"Modifiers"
+	{
+		"modifier_cannon_tower_splash"
+		{
+			"IsHidden"				"0"
+			"Passive"				"1"
+			"OnAttackLanded"
+			{
+				"CleaveAttack" //far
+				{
+					"CleavePercent"	"25"
+					"CleaveRadius"	"190"
+				}
+				"CleaveAttack" //medium
+				{
+					"CleavePercent"	"25"
+					"CleaveRadius"	"125"
+				}
+				"CleaveAttack" //full
+				{
+					"CleavePercent"	"50"
+					"CleaveRadius"	"100"
+				}
+			}
+		}
+	}
+}
+"crusher_splash"
+{
+	"BaseClass"						"ability_datadriven"
+	"AbilityTextureName"			"ogre_magi_bloodlust"
+	"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+	"MaxLevel"						"1"
+	"Modifiers"
+	{
+		"modifier_crusher_splash"
+		{
+			"IsHidden"				"0"
+			"Passive"				"1"
+			"OnAttackLanded"
+			{
+				"CleaveAttack" //full
+				{
+					"CleavePercent"	"100"
+					"CleaveRadius"	"200"
+				}
+			}
+		}
+	}
+}

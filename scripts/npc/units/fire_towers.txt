@@ -1,0 +1,82 @@
+
+//=================================================================================
+// Building: Tier 4 Barbecue
+//=================================================================================
+"barbecue"
+{
+	// General
+	//----------------------------------------------------------------
+	"BaseClass"					"npc_dota_creature"
+	"Model"						"models/props_debris/basket002_lid.vmdl"
+	"ModelScale"				"0.7"
+	"Level"						"1"
+	"HealthBarOffset"			"140"
+	"HasInventory"				"1"
+	"ConsideredHero"			"1"
+	
+	// Abilities
+	//----------------------------------------------------------------
+	"AbilityLayout"				"4"
+	"Ability1"					"train_pitiful_tower"
+	"Ability2"					"crusher_splash"
+	"Ability3"					""
+	"Ability4"					""
+	"Ability9"					""
+	"Ability10"					"ability_building"
+	"Ability11"					"ability_building_queue"
+	
+	// Armor
+	//----------------------------------------------------------------
+	"ArmorPhysical"				"5"
+	"MagicalResistance"			"0"
+	
+	// Attack
+	//----------------------------------------------------------------
+	"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+	"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+	"AttackDamageMin"			"97"
+	"AttackDamageMax"			"103"
+	"AttackRate"				"2.0"
+	"AttackAnimationPoint"		"0.3"
+	"AttackAcquisitionRange"	"300"
+	"AttackRange"				"300"
+	"ProjectileModel"			"particles/units/heroes/hero_mirana/mirana_base_attack.vpcf"	
+	"ProjectileSpeed"			"2000"
+	
+	// Bounty
+	//----------------------------------------------------------------
+	"BountyGoldMin"				"0.0"
+	"BountyGoldMax"				"0.0"
+	
+	// Bounds
+	//----------------------------------------------------------------
+	"BoundsHullName"			"DOTA_HULL_SIZE_SMALL"
+	"RingRadius"				"100"
+	"CollisionSize"				"100"
+		
+	// Movement
+	//----------------------------------------------------------------
+	"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+	"MovementSpeed"				"0"
+	"MovementTurnRate"          "0.5"       // Turning rate.
+	
+	// Status
+	//----------------------------------------------------------------
+	"StatusHealth"				"500"
+	"StatusHealthRegen"			"1.0"
+	"StatusMana"				"0"
+	"StatusManaRegen"			"0"
+	
+	// Vision
+	//----------------------------------------------------------------
+	"VisionDaytimeRange"		"900"
+	"VisionNighttimeRange"		"600"
+	
+	// Team
+	//----------------------------------------------------------------
+	"TeamName"					"DOTA_TEAM_NEUTRALS"
+	"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+	"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_STRUCTURE"
+	"UnitRelationShipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_BUILDING"
+	
+}
